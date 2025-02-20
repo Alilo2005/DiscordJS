@@ -11,12 +11,17 @@ module.exports = {
         .addStringOption(option =>
             option.setName('description')
                 .setDescription('Custom message for the notification')
+                .setRequired(false))
+        .addMentionableOption(option => 
+            option.setName('mention')
+                .setDescription('User or role to mention')
                 .setRequired(false)),
     async execute(interaction) {
         await interaction.deferReply({ flags: MessageFlags.Ephemeral }); // Prevents command expiration
 
         const time = interaction.options.getString('time');
         const description = interaction.options.getString('description') || 'This is your scheduled notification!';
+        const mention = interaction.options.getMentionable('mention');
         let [hour, minute] = time.split(':').map(Number);
 
         if (isNaN(hour) || isNaN(minute) || hour < 0 || hour > 23 || minute < 0 || minute > 59) {
@@ -44,14 +49,16 @@ module.exports = {
 
         await interaction.editReply(`✅ **Notification Scheduled!**  
 🕒 Time: **${time} (GMT+1)**  
-📜 Message: **"${description}"**`);
+📜 Message: **"${description}"**  
+🔔 Mention: ${mention ? mention.toString() : 'None'}`);
 
         setTimeout(async () => {
             try {
                 console.log('Sending scheduled notification...');
                 const channel = await interaction.client.channels.fetch(interaction.channelId);
                 if (channel) {
-                    await channel.send(`🔔 **Notification!**\n📜 ${description}`);
+                    await channel.send(`🔔 **Notification!**
+${mention ? mention.toString() : ''} 📜 ${description}`);
                     console.log('Notification sent successfully.');
                 } else {
                     console.error('Channel not found.');
