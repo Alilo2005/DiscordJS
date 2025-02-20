@@ -1,2 +1,57 @@
 # DiscordJS
 A good place where we create good stuff with discord js
+
+
+## Commands 🛠️
+
+### Utility Commands
+
+- **clear.js**: Deletes a specified number of messages from the channel.
+- **joke.js**: Tells a random joke.
+- **notify.js**: Schedules a custom notification.
+- **ping.js**: Replies with "Pong!".
+- **quote.js**: Fetches a random inspirational quote.
+- **server.js**: Replies with server info.
+- **user.js**: Replies with user info.
+- **weather.js**: Gets the current weather for a specified location.
+
+## Configuration ⚙️
+
+- **config.json**: Contains configuration details such as the bot token, client ID, and guild ID.
+
+## Deployment 🚀
+
+- **deploy-commands.js**: Deploys the commands to the Discord application.
+
+## Linting 🧹
+
+- **eslint.config.js**: Configuration for ESLint.
+
+## Entry Point 🎯
+
+- **index.js**: The main entry point of the bot. Initializes the bot, loads commands, and handles interactions.
+
+## Dependencies 📦
+
+- **axios**: For making HTTP requests.
+- **discord.js**: The main library for interacting with the Discord API.
+- **jsdom**: For DOM manipulation.
+- **node-schedule**: For scheduling tasks.
+- **openai**: For interacting with the OpenAI API.
+
+## Development Dependencies 🛠️
+
+- **@eslint/js**: ESLint configuration for JavaScript.
+- **eslint**: Linter for JavaScript.
+
+## Getting Started 🚀
+
+1. Clone the repository.
+2. Install dependencies using `pnpm install`.
+3. Create a `config.json` file with your bot token, client ID, and guild ID.
+4. Deploy the commands using `node deploy-commands.js`.
+5. Start the bot using `node index.js`.
+
+## License 📄
+
+This project is licensed under the ISC License.
