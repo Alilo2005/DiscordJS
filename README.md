@@ -15,9 +15,9 @@ A good place where we create good stuff with discord.js.
 - **user.js**: Replies with user info.
 - **weather.js**: Gets the current weather for a specified location.
 
-## Configuration ⚙️
+## Secrets ⚙️
 
-- **config.json**: Contains configuration details such as the bot token, client ID, and guild ID.
+- **.env**: Contains environment variables such as the bot token, client ID, and guild ID...
 
 ## Deployment 🚀
 
