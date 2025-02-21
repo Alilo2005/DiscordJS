@@ -2,6 +2,8 @@
 
 A good place where we create good stuff with discord.js.
 
+![Bot Image](/discord-bot/images/aloche.png)
+
 ## Commands 🛠️
 
 ### Utility Commands
