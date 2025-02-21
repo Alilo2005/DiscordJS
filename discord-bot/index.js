@@ -50,3 +50,17 @@ client.on(Events.InteractionCreate, async interaction => {
 });
 
 client.login(token);
+
+const express = require("express");
+const app = express();
+
+// Create a simple route to respond to pings
+app.get("/", (req, res) => {
+    res.send("Bot is online!");
+});
+
+// Start the server on port 3000 or a Render-assigned port
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Web server running on port ${PORT}`);
+});
