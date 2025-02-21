@@ -76,4 +76,4 @@ This project is licensed under the ISC License.
 
 ## Discord bots
 
-For inspirations and personal uses check [top.gg] (https://top.gg/)
+For inspirations and personal uses check [top.gg](https://top.gg/).
