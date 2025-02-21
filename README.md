@@ -17,9 +17,9 @@ A good place where we create good stuff with discord.js.
 - **user.js**: Replies with user info.
 - **weather.js**: Gets the current weather for a specified location.
 
-## Configuration ⚙️
+## Secrets ⚙️
 
-- **config.json**: Contains configuration details such as the bot token, client ID, and guild ID.
+- **.env**: Contains environment variables such as the bot token, client ID, and guild ID...
 
 ## Deployment 🚀
 
@@ -50,7 +50,7 @@ A good place where we create good stuff with discord.js.
 
 1. Clone the repository.
 2. Install dependencies using `pnpm install`.
-3. Create a `config.json` file with your bot token, client ID, and guild ID.
+3. Create a `.env` file with your bot token, client ID, and guild ID.
 4. Deploy the commands using `node deploy-commands.js`.
 5. Start the bot using `node index.js`.
 
