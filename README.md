@@ -1,6 +1,6 @@
 # DiscordJS
-A good place where we create good stuff with discord js
 
+A good place where we create good stuff with discord.js.
 
 ## Commands 🛠️
 
@@ -51,6 +51,10 @@ A good place where we create good stuff with discord js
 3. Create a `config.json` file with your bot token, client ID, and guild ID.
 4. Deploy the commands using `node deploy-commands.js`.
 5. Start the bot using `node index.js`.
+
+## Bot Invitation Link 🔗
+
+Invite the bot to your server using [this link](https://discord.com/oauth2/authorize?client_id=1341917262780698826&scope=bot&permissions=8).
 
 ## Contributing 🤝
 
