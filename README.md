@@ -72,3 +72,8 @@ We welcome contributions! Please follow these steps to contribute:
 ## License 📄
 
 This project is licensed under the ISC License.
+
+
+## Discord bots
+
+For inspirations and personal uses check [top.gg] (https://top.gg/)
